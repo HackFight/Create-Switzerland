@@ -2,6 +2,10 @@ package net.hackfight.createswitzerland;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.hackfight.createswitzerland.block.ModBlocks;
+import net.hackfight.createswitzerland.fluid.ModFluids;
+import net.hackfight.createswitzerland.item.ModItemGroups;
+import net.hackfight.createswitzerland.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,8 +15,13 @@ public class CreateSwitzerland implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Create: Switzerland is ready to go!");
+		LOGGER.info("Initializing Create: Switzerland");
 
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
 
+		ModBlocks.registerModBlocks();
+
+		ModFluids.registerModFluids();
 	}
 }

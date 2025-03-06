@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluidTag": "create-switzerland:dark_chocolate",
+      "amount": 9000
+    },
+    {
+      "fluidTag": "c:milk",
+      "amount": 18000
+    }
+  ],
+  "results": [
+    {
+      "fluid": "create-switzerland:dark_chocolate",
+      "amount": 27000
+    }
+  ],
+  "heatRequirement": "heated"
+}
