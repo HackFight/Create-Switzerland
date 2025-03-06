@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "create-switzerland",
+	"version": "${version}",
+	"name": "Create: Switzerland",
+	"description": "A Create addon that adds Swiss stuff.",
+	"authors": [
+		"Hackfight",
+		"PadjokeJ"
+	],
+	"contact": {
+		"homepage": "https://hackfight.dev",
+		"sources": "https://github.com/HackFight/create-switzerland"
+	},
+	"license": "MIT",
+	"icon": "assets/create-switzerland/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.hackfight.createswitzerland.CreateSwitzerland"
+		],
+		"fabric-datagen": [
+			"net.hackfight.createswitzerland.CreateSwitzerlandDataGenerator"
+		],
+		"client": [
+			"net.hackfight.createswitzerland.CreateSwitzerlandClient"
+		]
+	},
+	"mixins": [
+		"create-switzerland.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
