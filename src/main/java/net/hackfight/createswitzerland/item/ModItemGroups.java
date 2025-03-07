@@ -16,7 +16,7 @@ public class ModItemGroups {
 
     public static final ItemGroup CREATE_SWITZERLAND = Registry.register(Registries.ITEM_GROUP,
             new Identifier(CreateSwitzerland.MOD_ID, "create-switzerland"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.create-swizerland"))
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.create-switzerland"))
                     .icon(() -> new ItemStack(ModItems.MILK_CHOCOLATE_TABLET)).entries((displayContext, entries) -> {
 
                         entries.add(Items.COCOA_BEANS);
